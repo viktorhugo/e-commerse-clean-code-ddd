@@ -1,0 +1,16 @@
+{ 
+    "versión" :  2 , 
+    "compilaciones" :  [ 
+        { 
+            "src" :  "src/main.ts" , 
+            "uso" :  "@vercel/node" 
+        } 
+    ] , 
+    "rutas" :  [ 
+        { 
+            "src" :  "/ (.*)" , 
+            "dest" :  "src/main.ts" , 
+            "métodos" :  [ "GET" ,  "POST" ,  "PUT" ,  "DELETE" ] 
+        } 
+    ] 
+}
